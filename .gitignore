@@ -1,0 +1,17 @@
+# Local backups and operating-system metadata
+backup-before-week5-20261105/
+.DS_Store
+**/.DS_Store
+._*
+Thumbs.db
+desktop.ini
+
+# Local credentials and development artifacts
+.env
+.env.*
+!.env.example
+node_modules/
+__pycache__/
+*.py[cod]
+*.swp
+*~
