@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Week 5 critical reflection and data visualisations for COMM5780M.">
+  <title>Week 5: Data Visualisation | Yihan</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html">Yihan <span>Digital Practices</span></a>
+    <nav aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a class="active" href="workshop-reflections.html" aria-current="page">Workshop Reflections</a>
+    </nav>
+  </header>
+  <main class="article-main">
+    <nav class="breadcrumbs" aria-label="Breadcrumb"><a href="index.html">Home</a><span aria-hidden="true">/</span><a href="workshop-reflections.html">Workshop Reflections</a><span aria-hidden="true">/</span><span>Week 5</span></nav>
+    <article>
+      <header class="article-heading">
+        <p class="eyebrow">COMM5780M · Week 5</p>
+        <h1>Data Visualisation</h1>
+        <p class="lead">Comparing AI Academic Integrity Policies Across Eight UK Universities</p>
+      </header>
+      <section class="reflection-content" aria-labelledby="reflection-title">
+        <h2 id="reflection-title">Critical Reflection</h2>
+        <h3>1. From Data Collection to Visualisation</h3>
+        <p>In Week 4, our group explored how UK universities respond to the use of generative AI in academic assessments. We focused on publicly available university policies and organised the information into numerical categories.</p>
+        <p>My contribution focused on researching the AI-related academic integrity policies of University College London (UCL) and the University of Edinburgh. I used AI-assisted tools to support parts of the information retrieval and organisation process. However, finding reliable sources and checking whether the information accurately reflected official university guidance remained a significant challenge.</p>
+        <p>One difficulty was that universities did not always explain AI use in the same way. Some guidance was general, while other rules depended on particular assessments or activities. This made it difficult to classify different policies consistently.</p>
+        <p>In Week 5, the focus shifted from collecting and organising data to exploring how visualisation could communicate patterns within the dataset.</p>
+
+        <h3>2. Visualising the Dataset</h3>
+        <p>Using a pilot dataset covering eight UK universities, I used Codex to assist with producing two visualisations through Python scripts.</p>
+        <p>The first was a horizontal bar chart showing AI disclosure requirements (V3). According to our coding, six universities required acknowledgement or disclosure when AI was used, while two had context-dependent requirements.</p>
+        <p>The second was a categorical matrix comparing six policy variables across the eight universities. The bar chart made the overall distribution easier to understand, while the matrix provided more detailed comparisons between institutions.</p>
+        <p>Although these visualisations made the data easier to interpret, they also raised questions about whether numerical categories could fully represent the complexity of university policies.</p>
+
+        <h3>3. Critical Reflection: Is Data Visualisation Neutral?</h3>
+        <p>One important issue I identified was how decisions made during data collection and classification influenced the final visualisations.</p>
+        <p>For example, the language assistance variable (V6) combined AI translation, grammar correction and proofreading into one category. However, these activities may be treated differently within university policies. As a result, two institutions with the same numerical code may not necessarily have the same rules.</p>
+        <p>A similar issue appeared in the disclosure variable (V3), which grouped acknowledgement, citation and formal declaration together. Although these practices are related, they do not always mean the same thing.</p>
+        <p>This connects to the discussion of data and power in <em>Data Feminism</em> (D'Ignazio and Klein, 2020). Data does not simply represent reality without interpretation. The choices researchers make about which information to collect, how to classify it and how to present it can influence what audiences understand.</p>
+        <p>I also became more aware of the limitations of AI-assisted research. While AI tools helped organise information and generate visualisations, their outputs still needed to be checked against the original sources. A clear-looking chart does not automatically mean that the underlying data is accurate.</p>
+
+        <h3>4. Limitations and Future Improvements</h3>
+        <p>The dataset included only eight universities, and some coding decisions remained provisional. Therefore, the findings should be understood as exploratory rather than representative of UK higher education as a whole.</p>
+        <p>Another limitation was the difficulty of verifying and comparing information from different university websites. Policies sometimes used different terminology or referred to additional guidance at departmental or assessment level.</p>
+        <p>There were also inconsistencies between earlier and later versions of the coding system. For example, the definition of one variable changed between versions, making direct comparisons less reliable.</p>
+        <p>If I developed this research further, I would establish clearer coding rules before collecting data, verify each policy against its original source and separate translation from proofreading in the dataset.</p>
+        <p>I would also consider how different audiences might interpret the visualisations. A simple chart may help university administrators identify general patterns, while researchers may need additional information about policy exceptions and coding decisions.</p>
+
+        <h3>5. Conclusion</h3>
+        <p>This exercise helped me understand that data visualisation is not simply about turning numbers into charts. It also involves decisions about data collection, classification and representation.</p>
+        <p>The most important lesson was that making information visually clear does not necessarily make it complete or accurate. Good data visualisation requires both effective communication and critical attention to the limitations of the data behind it.</p>
+      </section>
+      <section aria-labelledby="visualisations-title">
+        <h2 id="visualisations-title">Data Visualisations</h2>
+        <p>The figures below show the eight institutions in the pilot workbook. The codes are categorical and must not be read as a score or as a representative estimate for all UK universities.</p>
+        <figure class="chart-figure">
+          <a class="chart-link" href="assets/Week5_Chart_A.png" target="_blank" rel="noopener" aria-label="Open Chart A at full size in a new tab">
+            <img src="assets/Week5_Chart_A.png" alt="Horizontal bar chart showing AI use disclosure policy codes across eight universities: six are coded 1, required when AI is used; two are coded 2, context-dependent; zero are coded 0 or 9." loading="lazy">
+          </a>
+          <figcaption><strong>Figure 1.</strong> AI use disclosure policy distribution (V3). Six universities are coded as requiring disclosure when AI is used; two are coded as context-dependent. The chart counts only the eight institutions in the pilot workbook. <a href="assets/Week5_Chart_A.png" target="_blank" rel="noopener">View full-size image</a>.</figcaption>
+        </figure>
+        <figure class="chart-figure">
+          <a class="chart-link" href="assets/Week5_Chart_B.png" target="_blank" rel="noopener" aria-label="Open Chart B at full size in a new tab">
+            <img src="assets/Week5_Chart_B.png" alt="Categorical matrix comparing eight universities on six AI policy variables V1 to V6. Each column has its own colour scale and code key; review notes mark provisional and disputed entries." loading="lazy">
+          </a>
+          <figcaption><strong>Figure 2.</strong> Categorical comparison of V1–V6 by university. Each variable has its own coding meanings and colour palette; review marks identify provisional or disputed entries. The sample contains eight institutions and is not representative of all UK universities. <a href="assets/Week5_Chart_B.png" target="_blank" rel="noopener">View full-size image</a>.</figcaption>
+        </figure>
+      </section>
+      <section aria-labelledby="references-title">
+        <h2 id="references-title">References</h2>
+        <p>D'Ignazio, C. and Klein, L.F. 2020. <em>Data Feminism</em>. Cambridge, MA: MIT Press. [Online]. [Accessed 5 November 2026]. Available from: <a href="https://data-feminism.mitpress.mit.edu/" target="_blank" rel="noopener">https://data-feminism.mitpress.mit.edu/</a></p>
+      </section>
+      <section aria-labelledby="ai-use-title">
+        <h2 id="ai-use-title">AI Use Statement</h2>
+        <p>Generative AI tools, including ChatGPT and Codex, were used to support parts of the research, data visualisation and portfolio development process.</p>
+        <p>AI-assisted tools helped with information retrieval and data organisation. Codex was used to generate Python scripts and produce the data visualisations. ChatGPT was also used to support the drafting, organisation and revision of the written reflection.</p>
+        <p>The reflection draws on my research activities, the project dataset and the methodological limitations identified during the process. The generated visualisations were checked against the available dataset, although not all original university policy sources have been independently reverified.</p>
+        <p>AI-assisted contributions have been acknowledged to distinguish them from my own research activities and reflections.</p>
+      </section>
+    </article>
+  </main>
+  <footer><p><a href="workshop-reflections.html">Workshop Reflections</a> · COMM5780M</p></footer>
+</body>
+</html>

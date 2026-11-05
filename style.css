@@ -1,0 +1,65 @@
+:root {
+  color-scheme: light;
+  --ink: #203246;
+  --muted: #5b6b7c;
+  --green: #2f806f;
+  --green-dark: #236557;
+  --paper: #f7f8f5;
+  --surface: #ffffff;
+  --line: #dce4e3;
+  --soft: #eaf1ef;
+  font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+* { box-sizing: border-box; }
+body { margin: 0; color: var(--ink); background: var(--paper); line-height: 1.7; }
+a { color: var(--green-dark); text-underline-offset: .2em; }
+a:hover { color: #174a40; }
+:focus-visible { outline: 3px solid #d58c35; outline-offset: 3px; }
+.site-header { min-height: 76px; padding: 1rem max(5vw, calc((100vw - 1120px)/2)); display: flex; align-items: center; justify-content: space-between; gap: 1.5rem; background: var(--surface); border-bottom: 1px solid var(--line); }
+.brand { color: var(--ink); text-decoration: none; font-size: 1.15rem; font-weight: 750; letter-spacing: -.02em; white-space: nowrap; }
+.brand span { color: var(--muted); font-weight: 450; margin-left: .45rem; }
+.site-header nav { display: flex; flex-wrap: wrap; gap: .5rem 1.4rem; }
+.site-header nav a { color: var(--muted); text-decoration: none; font-weight: 600; }
+.site-header nav a.active, .site-header nav a:hover { color: var(--green-dark); }
+.home-main, .content-main, .article-main { width: min(100% - 2.5rem, 900px); margin: 0 auto; }
+.home-main { padding: 5rem 0 4rem; }
+.intro-card { max-width: 800px; padding: clamp(2rem, 6vw, 4.5rem); background: var(--surface); border: 1px solid var(--line); border-radius: 1.25rem; box-shadow: 0 15px 50px rgba(32,50,70,.06); }
+.eyebrow { margin: 0 0 .55rem; color: var(--green-dark); font-size: .8rem; font-weight: 750; letter-spacing: .12em; text-transform: uppercase; }
+h1, h2, p { margin-top: 0; }
+h1 { margin-bottom: 1rem; font-size: clamp(2.3rem, 7vw, 4.5rem); line-height: 1.08; letter-spacing: -.045em; }
+h2 { margin-bottom: .8rem; font-size: clamp(1.5rem, 4vw, 2rem); line-height: 1.2; letter-spacing: -.025em; }
+.lead { color: var(--muted); font-size: clamp(1.12rem, 2vw, 1.35rem); line-height: 1.55; }
+.button-link { display: inline-flex; gap: .6rem; align-items: center; margin-top: .8rem; padding: .8rem 1.1rem; border-radius: .5rem; background: var(--green-dark); color: white; font-weight: 700; text-decoration: none; }
+.button-link:hover { background: #174a40; color: white; }
+.interests { margin: 3rem 0 0; max-width: 700px; }
+.content-main { min-height: 65vh; padding: 4rem 0; }
+.reflection-card { margin-top: 2.5rem; padding: clamp(1.5rem, 4vw, 2.5rem); background: var(--surface); border: 1px solid var(--line); border-radius: .9rem; }
+.reflection-card h2 { font-size: 1.65rem; }
+.reflection-card h2 a { color: var(--ink); text-decoration: none; }
+.reflection-card h2 a:hover { color: var(--green-dark); text-decoration: underline; }
+.text-link { font-weight: 700; }
+.article-main { max-width: 960px; padding: 2rem 0 5rem; }
+.breadcrumbs { display: flex; flex-wrap: wrap; gap: .55rem; margin-bottom: 2.5rem; color: var(--muted); font-size: .9rem; }
+.breadcrumbs a { color: var(--muted); }
+.article-heading { max-width: 800px; margin-bottom: 3rem; }
+.article-heading h1 { font-size: clamp(2.4rem, 6vw, 4rem); }
+.article-main section { margin: 3rem 0; }
+.reflection-content h3 { margin: 2rem 0 .75rem; font-size: clamp(1.15rem, 2.5vw, 1.35rem); line-height: 1.35; letter-spacing: -.01em; }
+.reflection-content p { max-width: 74ch; margin-bottom: 1.15rem; }
+.chart-figure { margin: 2rem 0 3rem; padding: clamp(.6rem, 2vw, 1rem); background: var(--surface); border: 1px solid var(--line); border-radius: .8rem; }
+.chart-link { display: block; line-height: 0; }
+.chart-figure img { display: block; width: 100%; max-width: 100%; height: auto; object-fit: contain; border-radius: .4rem; }
+.chart-figure figcaption { padding: 1rem .35rem .35rem; color: #3e5062; font-size: .95rem; line-height: 1.6; }
+footer { padding: 1.25rem 5vw; border-top: 1px solid var(--line); color: var(--muted); text-align: center; font-size: .9rem; }
+footer p { margin: 0; }
+@media (max-width: 640px) {
+  .site-header { align-items: flex-start; flex-direction: column; gap: .65rem; padding: 1rem 1.25rem; }
+  .site-header nav { gap: .35rem 1rem; }
+  .home-main { padding: 2rem 0; }
+  .content-main { padding: 2.5rem 0; }
+  .article-main { width: min(100% - 1.5rem, 960px); padding-top: 1.25rem; }
+  .breadcrumbs { margin-bottom: 1.7rem; }
+}
+@media (prefers-reduced-motion: no-preference) {
+  a { transition: color .15s ease, background-color .15s ease; }
+}
